@@ -17,11 +17,12 @@ data Subsite = Subsite
   { getStatic :: Static
   }
 
-mkYesodSubData "Subsite" [parseRoutes|
+mkYesodSubData
+  "Subsite"
+  [parseRoutes|
 / SubHomeR GET
 
--- TODO: Make this subsite work
--- /static StaticR Static getStatic
+/static StaticR Static getStatic
 |]
 
 newSubsite :: MonadIO m => m Subsite

@@ -3,17 +3,15 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE RankNTypes #-}
-{-# HLINT ignore "Redundant bracket" #-}
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE ViewPatterns #-}
-{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# OPTIONS_GHC -fno-warn-orphans #-}
 
-module Subsite (
-  module Subsite.Data,
-  module Subsite,
-) where
+module Subsite
+  ( module Subsite.Data
+  , module Subsite
+  ) where
 
 import ClassyPrelude
 import StaticFiles

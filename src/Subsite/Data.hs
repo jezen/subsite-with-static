@@ -17,11 +17,8 @@ data Subsite = Subsite
   { getStatic :: Static
   }
 
-mkYesodSubData
-  "Subsite"
-  [parseRoutes|
+mkYesodSubData "Subsite" [parseRoutes|
 / SubHomeR GET
-
 /static StaticR Static getStatic
 |]
 

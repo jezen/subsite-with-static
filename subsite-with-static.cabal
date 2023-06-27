@@ -23,7 +23,7 @@ executable subsite-with-static
     , wai
     , warp
     , yesod
-    , yesod-core
+    , yesod-core >=1.6.24.3
     , yesod-static
 
   ghc-options:

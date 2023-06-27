@@ -28,6 +28,16 @@
               hl.disableLibraryProfiling
               hl.disableExecutableProfiling
             ];
+
+            overrides = self: super: {
+              yesod-core =
+                self.callCabal2nix "yesod-core" (builtins.fetchGit {
+                     url = "https://github.com/AriFordsham/yesod";
+                     ref = "ari/subsites";
+                     rev = "8be44a8cf4f755a90de64cb61fe22eb3570d8915";
+                  } + "/yesod-core") {};
+
+            };
           };
 
       in {

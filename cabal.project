@@ -1,0 +1,13 @@
+packages:
+  ./.
+
+source-repository-package
+  type: git
+  location: https://github.com/AriFordsham/yesod.git
+  tag: d8ae828687292ba224fa9533199b5c3e41da1650
+  subdir:
+    yesod
+    yesod-core
+    yesod-form
+    yesod-persistent
+    yesod-static
